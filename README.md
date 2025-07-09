@@ -1,0 +1,1 @@
+cdn-ck.my.id
