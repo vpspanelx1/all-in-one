@@ -2,60 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CK404 Show</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Snake Border</title>
   <style>
-    * {
+    html, body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
       background: #111;
       overflow: hidden;
-      height: 100vh;
-      width: 100vw;
-      position: relative;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    /* RGB ফ্লো বর্ডার */
-    .border-glow {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
       height: 100%;
-      pointer-events: none;
-      z-index: 999;
-      box-shadow:
-        inset 0 0 40px 5px rgba(255, 0, 0, 0.4),
-        inset 0 0 60px 10px rgba(0, 255, 255, 0.4),
-        0 0 40px rgba(255, 255, 255, 0.2);
-      animation: glowBorder 5s ease-in-out infinite alternate;
-      border: 10px solid transparent;
-      border-image: linear-gradient(90deg, red, yellow, lime, cyan, blue, magenta, red) 1;
-    }
-
-    @keyframes glowBorder {
-      0% {
-        box-shadow:
-          inset 0 0 5px rgba(255, 255, 255, 0),
-          0 0 10px rgba(255, 255, 255, 0);
-        opacity: 0.4;
-      }
-      50% {
-        box-shadow:
-          inset 0 0 50px rgba(255, 0, 255, 0.8),
-          0 0 30px rgba(0, 255, 255, 0.5);
-        opacity: 1;
-      }
-      100% {
-        box-shadow:
-          inset 0 0 5px rgba(255, 255, 255, 0),
-          0 0 10px rgba(255, 255, 255, 0);
-        opacity: 0.4;
-      }
+      width: 100%;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     .center-text {
@@ -63,7 +20,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 80px;
+      font-size: clamp(32px, 8vw, 80px);
       font-weight: bold;
       background: linear-gradient(90deg, #ff0066, #ffcc00, #33ccff, #66ff66);
       -webkit-background-clip: text;
@@ -74,7 +31,7 @@
 
     .ck404 {
       position: absolute;
-      font-size: 48px;
+      font-size: clamp(18px, 5vw, 48px);
       font-weight: bold;
       background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
       -webkit-background-clip: text;
@@ -104,29 +61,84 @@
         opacity: 0;
       }
     }
+
+    .snake-path {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    .snake-path path {
+      fill: none;
+      stroke-width: clamp(8px, 2vw, 20px);
+      stroke: url(#snakeGradient);
+      stroke-dasharray: 4000;
+      stroke-dashoffset: 4000;
+      animation: snakeRun 20s linear infinite;
+      stroke-linecap: round;
+    }
+
+    @keyframes snakeRun {
+      0% {
+        stroke-dashoffset: 4000;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- RGB Light Border -->
-  <div class="border-glow"></div>
+  <!-- Snake Animated Border -->
+  <svg class="snake-path" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="snakeGradient" gradientTransform="rotate(90)">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="20%" stop-color="orange"/>
+        <stop offset="40%" stop-color="yellow"/>
+        <stop offset="60%" stop-color="lime"/>
+        <stop offset="80%" stop-color="cyan"/>
+        <stop offset="100%" stop-color="magenta"/>
+      </linearGradient>
+    </defs>
+    <path d="
+      M0,50 
+      Q100,0 200,50 
+      T400,50 T600,50 T800,50 T1000,50
+      L1000,950 
+      Q900,1000 800,950 
+      T600,950 T400,950 T200,950 T0,950
+      Z" />
+  </svg>
 
   <!-- Center Text -->
   <div class="center-text">Thank you</div>
 
-  <!-- CK404 Texts -->
+  <!-- Animated CK404 Texts -->
   <script>
-    for (let i = 0; i < 10; i++) {
+    const total = 10;
+    for (let i = 0; i < total; i++) {
       const el = document.createElement('div');
       el.className = 'ck404';
       el.textContent = 'CK404';
-
       el.style.top = Math.random() * window.innerHeight + 'px';
       el.style.left = Math.random() * window.innerWidth + 'px';
       el.style.animationDelay = (i * 1.2) + 's';
-
       document.body.appendChild(el);
     }
+
+    // Resize handler for mobile orientation changes
+    window.addEventListener('resize', () => {
+      document.querySelectorAll('.ck404').forEach(el => {
+        el.style.top = Math.random() * window.innerHeight + 'px';
+        el.style.left = Math.random() * window.innerWidth + 'px';
+      });
+    });
   </script>
 
 </body>
